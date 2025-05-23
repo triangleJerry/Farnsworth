@@ -1,0 +1,2 @@
+# Farnsworth
+local LLMs app.
