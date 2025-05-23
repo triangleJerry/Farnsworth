@@ -6,11 +6,27 @@
 //
 
 import SwiftUI
+import LLM
+
+class Model: LLM {
+    
+    convenience init() {
+        
+        let url = Bundle.main.url(forResource: "llama-3.2-1b-instruct-q4_k_m", withExtension: "gguf")!
+        let systemPrompt = "You are a helpful AI assistant."
+        self.init(from: url, template: .chatML(systemPrompt))!
+    }
+}
 
 struct ChatView: View {
     
-    @State private var output = ""
+    @ObservedObject var llm: Model
     @State private var multiLineText = ""
+    
+    init(_ llm: Model) {
+        
+        self.llm = llm
+    }
     
     var body: some View {
         
@@ -26,7 +42,7 @@ struct ChatView: View {
                 ScrollView {
                     VStack {
                         // to be replaced later on
-                        Text(.init(output))
+                        Text(.init(llm.output))
                             .frame(maxWidth: .infinity, alignment: .leading)
                             .padding(.horizontal)
                             .padding(.top, 10)
@@ -36,7 +52,7 @@ struct ChatView: View {
                             .id("bottomID")
                     }
                 }
-                .onChange(of: output) {
+                .onChange(of: llm.output) {
                     withAnimation {
                         proxy.scrollTo("bottomID"
                                        , anchor: .bottom)
@@ -81,14 +97,18 @@ struct ChatView: View {
         }
         .task { }
     }
+    
     private func sendMessage() {
-        // to be implemented
+        Task {
+            await llm.respond(to: multiLineText)
+        }
     }
+    
     private func clearMessages() {
         // to be implemented
     }
 }
 
 #Preview {
-    ChatView()
+    ChatView(Model())
 }

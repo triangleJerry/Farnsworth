@@ -16,6 +16,9 @@
 		051E68DB2DE09FAB002FB538 /* FarnsworthUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 051E68D82DE09FAB002FB538 /* FarnsworthUITestsLaunchTests.swift */; };
 		051E68DD2DE0A169002FB538 /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 051E68DC2DE0A169002FB538 /* ChatView.swift */; };
 		051E68E12DE0A3B1002FB538 /* LLM in Frameworks */ = {isa = PBXBuildFile; productRef = 051E68E02DE0A3B1002FB538 /* LLM */; };
+		051E68E72DE0AFCA002FB538 /* llama-3.2-1b-instruct-q4_k_m.gguf in Resources */ = {isa = PBXBuildFile; fileRef = 051E68E62DE0AFCA002FB538 /* llama-3.2-1b-instruct-q4_k_m.gguf */; };
+		051E68E82DE0AFCA002FB538 /* llama-3.2-1b-instruct-q4_k_m.gguf in Resources */ = {isa = PBXBuildFile; fileRef = 051E68E62DE0AFCA002FB538 /* llama-3.2-1b-instruct-q4_k_m.gguf */; };
+		051E68E92DE0AFCA002FB538 /* llama-3.2-1b-instruct-q4_k_m.gguf in Resources */ = {isa = PBXBuildFile; fileRef = 051E68E62DE0AFCA002FB538 /* llama-3.2-1b-instruct-q4_k_m.gguf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,7 @@
 		051E68D72DE09FAB002FB538 /* FarnsworthUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FarnsworthUITests.swift; sourceTree = "<group>"; };
 		051E68D82DE09FAB002FB538 /* FarnsworthUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FarnsworthUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		051E68DC2DE0A169002FB538 /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
+		051E68E62DE0AFCA002FB538 /* llama-3.2-1b-instruct-q4_k_m.gguf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "llama-3.2-1b-instruct-q4_k_m.gguf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +107,7 @@
 				051E68CD2DE09FA3002FB538 /* FarnsworthApp.swift */,
 				051E68CC2DE09FA3002FB538 /* ContentView.swift */,
 				051E68CE2DE09FA3002FB538 /* Item.swift */,
+				051E68E62DE0AFCA002FB538 /* llama-3.2-1b-instruct-q4_k_m.gguf */,
 			);
 			path = Farnsworth;
 			sourceTree = "<group>";
@@ -247,6 +252,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				051E68E72DE0AFCA002FB538 /* llama-3.2-1b-instruct-q4_k_m.gguf in Resources */,
 				051E68D32DE09FA3002FB538 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -255,6 +261,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				051E68E92DE0AFCA002FB538 /* llama-3.2-1b-instruct-q4_k_m.gguf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,6 +269,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				051E68E82DE0AFCA002FB538 /* llama-3.2-1b-instruct-q4_k_m.gguf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

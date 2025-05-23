@@ -25,7 +25,7 @@ struct FarnsworthApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ChatView()
+            ChatView(Model())
         }
         .modelContainer(sharedModelContainer)
     }
