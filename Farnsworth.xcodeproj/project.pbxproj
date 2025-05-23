@@ -15,6 +15,7 @@
 		051E68DA2DE09FAB002FB538 /* FarnsworthUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 051E68D72DE09FAB002FB538 /* FarnsworthUITests.swift */; };
 		051E68DB2DE09FAB002FB538 /* FarnsworthUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 051E68D82DE09FAB002FB538 /* FarnsworthUITestsLaunchTests.swift */; };
 		051E68DD2DE0A169002FB538 /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 051E68DC2DE0A169002FB538 /* ChatView.swift */; };
+		051E68E12DE0A3B1002FB538 /* LLM in Frameworks */ = {isa = PBXBuildFile; productRef = 051E68E02DE0A3B1002FB538 /* LLM */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				051E68E12DE0A3B1002FB538 /* LLM in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -147,6 +149,7 @@
 			);
 			name = Farnsworth;
 			packageProductDependencies = (
+				051E68E02DE0A3B1002FB538 /* LLM */,
 			);
 			productName = Farnsworth;
 			productReference = 051E689F2DE09F96002FB538 /* Farnsworth.app */;
@@ -224,6 +227,9 @@
 			);
 			mainGroup = 051E68962DE09F96002FB538;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				051E68DF2DE0A3B1002FB538 /* XCRemoteSwiftPackageReference "LLM" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 051E68A02DE09F96002FB538 /* Products */;
 			projectDirPath = "";
@@ -589,6 +595,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		051E68DF2DE0A3B1002FB538 /* XCRemoteSwiftPackageReference "LLM" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/eastriverlee/LLM.swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.7.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		051E68E02DE0A3B1002FB538 /* LLM */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 051E68DF2DE0A3B1002FB538 /* XCRemoteSwiftPackageReference "LLM" */;
+			productName = LLM;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 051E68972DE09F96002FB538 /* Project object */;
 }
