@@ -14,6 +14,7 @@
 		051E68D62DE09FA9002FB538 /* FarnsworthTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 051E68D42DE09FA9002FB538 /* FarnsworthTests.swift */; };
 		051E68DA2DE09FAB002FB538 /* FarnsworthUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 051E68D72DE09FAB002FB538 /* FarnsworthUITests.swift */; };
 		051E68DB2DE09FAB002FB538 /* FarnsworthUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 051E68D82DE09FAB002FB538 /* FarnsworthUITestsLaunchTests.swift */; };
+		051E68DD2DE0A169002FB538 /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 051E68DC2DE0A169002FB538 /* ChatView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		051E68D42DE09FA9002FB538 /* FarnsworthTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FarnsworthTests.swift; sourceTree = "<group>"; };
 		051E68D72DE09FAB002FB538 /* FarnsworthUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FarnsworthUITests.swift; sourceTree = "<group>"; };
 		051E68D82DE09FAB002FB538 /* FarnsworthUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FarnsworthUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		051E68DC2DE0A169002FB538 /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,9 +96,10 @@
 		051E68CF2DE09FA3002FB538 /* Farnsworth */ = {
 			isa = PBXGroup;
 			children = (
+				051E68DE2DE0A226002FB538 /* UI */,
 				051E68CB2DE09FA3002FB538 /* Assets.xcassets */,
-				051E68CC2DE09FA3002FB538 /* ContentView.swift */,
 				051E68CD2DE09FA3002FB538 /* FarnsworthApp.swift */,
+				051E68CC2DE09FA3002FB538 /* ContentView.swift */,
 				051E68CE2DE09FA3002FB538 /* Item.swift */,
 			);
 			path = Farnsworth;
@@ -117,6 +120,14 @@
 				051E68D82DE09FAB002FB538 /* FarnsworthUITestsLaunchTests.swift */,
 			);
 			path = FarnsworthUITests;
+			sourceTree = "<group>";
+		};
+		051E68DE2DE0A226002FB538 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				051E68DC2DE0A169002FB538 /* ChatView.swift */,
+			);
+			path = UI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -255,6 +266,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				051E68DD2DE0A169002FB538 /* ChatView.swift in Sources */,
 				051E68D02DE09FA3002FB538 /* ContentView.swift in Sources */,
 				051E68D12DE09FA3002FB538 /* FarnsworthApp.swift in Sources */,
 				051E68D22DE09FA3002FB538 /* Item.swift in Sources */,
