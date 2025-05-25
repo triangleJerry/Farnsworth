@@ -15,7 +15,7 @@
 		051E68DA2DE09FAB002FB538 /* FarnsworthUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 051E68D72DE09FAB002FB538 /* FarnsworthUITests.swift */; };
 		051E68DB2DE09FAB002FB538 /* FarnsworthUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 051E68D82DE09FAB002FB538 /* FarnsworthUITestsLaunchTests.swift */; };
 		051E68DD2DE0A169002FB538 /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 051E68DC2DE0A169002FB538 /* ChatView.swift */; };
-		051E68E12DE0A3B1002FB538 /* LLM in Frameworks */ = {isa = PBXBuildFile; productRef = 051E68E02DE0A3B1002FB538 /* LLM */; };
+		051E68EC2DE32086002FB538 /* MLXLLM in Frameworks */ = {isa = PBXBuildFile; productRef = 051E68EB2DE32086002FB538 /* MLXLLM */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,7 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				051E68E12DE0A3B1002FB538 /* LLM in Frameworks */,
+				051E68EC2DE32086002FB538 /* MLXLLM in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -149,7 +149,7 @@
 			);
 			name = Farnsworth;
 			packageProductDependencies = (
-				051E68E02DE0A3B1002FB538 /* LLM */,
+				051E68EB2DE32086002FB538 /* MLXLLM */,
 			);
 			productName = Farnsworth;
 			productReference = 051E689F2DE09F96002FB538 /* Farnsworth.app */;
@@ -228,7 +228,7 @@
 			mainGroup = 051E68962DE09F96002FB538;
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
-				051E68DF2DE0A3B1002FB538 /* XCRemoteSwiftPackageReference "LLM" */,
+				051E68EA2DE32086002FB538 /* XCRemoteSwiftPackageReference "mlx-swift-examples" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 051E68A02DE09F96002FB538 /* Products */;
@@ -597,21 +597,21 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		051E68DF2DE0A3B1002FB538 /* XCRemoteSwiftPackageReference "LLM" */ = {
+		051E68EA2DE32086002FB538 /* XCRemoteSwiftPackageReference "mlx-swift-examples" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/eastriverlee/LLM.swift";
+			repositoryURL = "https://github.com/ml-explore/mlx-swift-examples/";
 			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 1.7.2;
+				branch = main;
+				kind = branch;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		051E68E02DE0A3B1002FB538 /* LLM */ = {
+		051E68EB2DE32086002FB538 /* MLXLLM */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 051E68DF2DE0A3B1002FB538 /* XCRemoteSwiftPackageReference "LLM" */;
-			productName = LLM;
+			package = 051E68EA2DE32086002FB538 /* XCRemoteSwiftPackageReference "mlx-swift-examples" */;
+			productName = MLXLLM;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
