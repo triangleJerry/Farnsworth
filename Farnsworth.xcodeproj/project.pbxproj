@@ -15,7 +15,8 @@
 		051E68DA2DE09FAB002FB538 /* FarnsworthUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 051E68D72DE09FAB002FB538 /* FarnsworthUITests.swift */; };
 		051E68DB2DE09FAB002FB538 /* FarnsworthUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 051E68D82DE09FAB002FB538 /* FarnsworthUITestsLaunchTests.swift */; };
 		051E68DD2DE0A169002FB538 /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 051E68DC2DE0A169002FB538 /* ChatView.swift */; };
-		051E68E12DE0A3B1002FB538 /* LLM in Frameworks */ = {isa = PBXBuildFile; productRef = 051E68E02DE0A3B1002FB538 /* LLM */; };
+		051E68EC2DE32086002FB538 /* MLXLLM in Frameworks */ = {isa = PBXBuildFile; productRef = 051E68EB2DE32086002FB538 /* MLXLLM */; };
+		051E68F02DE32210002FB538 /* LLMEvaluator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 051E68EF2DE32210002FB538 /* LLMEvaluator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		051E68D72DE09FAB002FB538 /* FarnsworthUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FarnsworthUITests.swift; sourceTree = "<group>"; };
 		051E68D82DE09FAB002FB538 /* FarnsworthUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FarnsworthUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		051E68DC2DE0A169002FB538 /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
+		051E68EF2DE32210002FB538 /* LLMEvaluator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LLMEvaluator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,7 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				051E68E12DE0A3B1002FB538 /* LLM in Frameworks */,
+				051E68EC2DE32086002FB538 /* MLXLLM in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,6 +100,7 @@
 		051E68CF2DE09FA3002FB538 /* Farnsworth */ = {
 			isa = PBXGroup;
 			children = (
+				051E68EF2DE32210002FB538 /* LLMEvaluator.swift */,
 				051E68DE2DE0A226002FB538 /* UI */,
 				051E68CB2DE09FA3002FB538 /* Assets.xcassets */,
 				051E68CD2DE09FA3002FB538 /* FarnsworthApp.swift */,
@@ -149,7 +152,7 @@
 			);
 			name = Farnsworth;
 			packageProductDependencies = (
-				051E68E02DE0A3B1002FB538 /* LLM */,
+				051E68EB2DE32086002FB538 /* MLXLLM */,
 			);
 			productName = Farnsworth;
 			productReference = 051E689F2DE09F96002FB538 /* Farnsworth.app */;
@@ -228,7 +231,7 @@
 			mainGroup = 051E68962DE09F96002FB538;
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
-				051E68DF2DE0A3B1002FB538 /* XCRemoteSwiftPackageReference "LLM" */,
+				051E68EA2DE32086002FB538 /* XCRemoteSwiftPackageReference "mlx-swift-examples" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 051E68A02DE09F96002FB538 /* Products */;
@@ -276,6 +279,7 @@
 				051E68D02DE09FA3002FB538 /* ContentView.swift in Sources */,
 				051E68D12DE09FA3002FB538 /* FarnsworthApp.swift in Sources */,
 				051E68D22DE09FA3002FB538 /* Item.swift in Sources */,
+				051E68F02DE32210002FB538 /* LLMEvaluator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -597,21 +601,21 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		051E68DF2DE0A3B1002FB538 /* XCRemoteSwiftPackageReference "LLM" */ = {
+		051E68EA2DE32086002FB538 /* XCRemoteSwiftPackageReference "mlx-swift-examples" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/eastriverlee/LLM.swift";
+			repositoryURL = "https://github.com/ml-explore/mlx-swift-examples/";
 			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 1.7.2;
+				branch = main;
+				kind = branch;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		051E68E02DE0A3B1002FB538 /* LLM */ = {
+		051E68EB2DE32086002FB538 /* MLXLLM */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 051E68DF2DE0A3B1002FB538 /* XCRemoteSwiftPackageReference "LLM" */;
-			productName = LLM;
+			package = 051E68EA2DE32086002FB538 /* XCRemoteSwiftPackageReference "mlx-swift-examples" */;
+			productName = MLXLLM;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
